@@ -4,10 +4,10 @@ import { RouterView } from 'vue-router';
 
 <template>
   <header>
-    <div class="navbar">
-      <div class="flex items-center mx-auto text-xl font-bold gap-7">
+    <div class="navbar fixed bg-base-100 w-full z-50">
+      <div class="flex items-center mx-auto text-xl font-bold">
         <nav>
-          <ul class="menu menu-horizontal">
+          <ul class="menu-horizontal">
             <li>
               <RouterLink to="/movies" class="hover:underline p-2">
                 movies
