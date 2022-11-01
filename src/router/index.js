@@ -10,6 +10,11 @@ const router = createRouter({
       name: 'movies',
       component: () => import('../views/Movies.vue'),
     },
+    {
+      path: '/movie/:id',
+      name: 'movie',
+      component: () => import('../views/Movie.vue'),
+    },
     { path: '/:pathMatch(.*)*', redirect: () => ({ path: '/' }) },
   ],
 });

@@ -7,13 +7,12 @@ import { genres } from '../utils/constants';
 import Icon from '../components/common/Icon.vue';
 import { mdiAlertDecagramOutline, mdiCheck } from '@mdi/js';
 import { debounce } from 'lodash-es';
-import NoData from '../components/common/NoData.vue';
 
 const state = reactive({
   genres: new Set(),
   movies: [],
   input: '',
-  loading: true,
+  loading: false,
 });
 
 watch(
@@ -29,14 +28,14 @@ watch(
     } finally {
       state.loading = false;
     }
-  }, 500),
+  }, 2000),
   { immediate: true }
 );
 </script>
 
 <template>
   <main
-    class="p-5 !pt-24 lg:p-16 h-full w-full flex flex-col max-w-2xl mx-auto flex-1"
+    class="p-5 !pt-24 lg:p-16 h-full w-full flex flex-col max-w-2xl mx-auto"
   >
     <div class="mx-auto mb-7 w-full flex items-center justify-center gap-5">
       <input
@@ -92,11 +91,7 @@ watch(
     </div>
     <div
       class="movie-grid"
-      :class="[
-        !state.loading && state.movies.length
-          ? 'grid after:flex'
-          : 'flex flex-1',
-      ]"
+      :class="[!state.loading && state.movies.length ? 'grid' : 'flex']"
     >
       <Loader v-if="state.loading" size="32" class="m-auto" />
       <NoData v-else-if="!state.movies.length" size="32" class="m-auto" />
@@ -112,7 +107,7 @@ watch(
 
 <style lang="postcss">
 .movie-grid {
-  @apply gap-10 min-h-full w-full;
+  @apply gap-10 h-full after:flex w-full;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: max-content;
 }

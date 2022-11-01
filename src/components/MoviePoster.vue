@@ -25,7 +25,7 @@ const movie = defineProps({
       class="card-body group-hover:opacity-100 md:opacity-0 transition-opacity"
     >
       <h2 class="card-title" v-html="movie.name"></h2>
-      <div
+      <!-- <div
         v-if="movie.description"
         class="relative h-full w-full md:opacity-100 opacity-0 group-hover:opacity-100"
       >
@@ -33,7 +33,7 @@ const movie = defineProps({
           class="absolute inset-x-0 inset-y-2 overflow-auto"
           v-html="movie.description"
         ></div>
-      </div>
+      </div> -->
 
       <div class="card-actions justify-end mb-0 mt-auto">
         <RouterLink
