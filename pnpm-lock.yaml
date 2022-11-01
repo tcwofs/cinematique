@@ -12,6 +12,7 @@ specifiers:
   daisyui: ^2.37.0
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
+  lodash-es: ^4.17.21
   pinia: ^2.0.23
   postcss: ^8.4.18
   postcss-advanced-variables: ^3.0.1
@@ -43,6 +44,7 @@ devDependencies:
   daisyui: 2.37.0_lycaqaeny3mp632atgvyvqdgwe
   eslint: 8.26.0
   eslint-plugin-vue: 9.7.0_eslint@8.26.0
+  lodash-es: 4.17.21
   postcss: 8.4.18
   postcss-advanced-variables: 3.0.1
   postcss-import: 15.0.0_postcss@8.4.18
@@ -1243,6 +1245,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
+    dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: true
 
   /lodash.castarray/4.4.0:
