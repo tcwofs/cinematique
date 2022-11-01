@@ -56,7 +56,7 @@ onMounted(async () => {
 <style lang="postcss">
 .additional-info {
   ul {
-    @apply flex flex-col font-bold gap-1;
+    @apply flex flex-col font-bold gap-1 uppercase text-sm;
     li {
       @apply grid grid-cols-2;
       & > :first-child {
