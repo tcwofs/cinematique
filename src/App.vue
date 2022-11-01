@@ -5,7 +5,7 @@ import { RouterView } from 'vue-router';
 <template>
   <header>
     <div
-      v-if="$router.currentRoute.value.name === 'home'"
+      v-if="$router.currentRoute.value.name !== 'home'"
       class="navbar fixed bg-base-100 w-full z-50"
     >
       <div class="flex items-center mx-auto text-xl font-bold">
