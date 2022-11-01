@@ -1,0 +1,1 @@
+.movie-grid{min-height:100%;width:100%;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));grid-auto-rows:max-content}
