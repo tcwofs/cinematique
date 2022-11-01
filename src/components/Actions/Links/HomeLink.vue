@@ -17,7 +17,11 @@ const props = defineProps({
     <span
       class="flex flex-col text-3xl font-normal text-base-100 my-auto lowercase"
     >
-      <Icon v-if="props.icon" class="w-24 h-24 m-auto" :d="props.icon" />
+      <Icon
+        v-if="props.icon"
+        class="lg:w-24 lg:h-24 h-16 w-16 m-auto"
+        :d="props.icon"
+      />
       <span v-if="props.text">{{ props.text }}</span>
     </span>
   </RouterLink>
