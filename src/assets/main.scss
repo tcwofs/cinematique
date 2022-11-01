@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Courier Prime';
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  width: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+html,
+.scrollbar {
+  scrollbar-color: hsl(var(--nc)) hsl(var(--b1));
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--b1));
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: hsl(var(--nc));
+}
