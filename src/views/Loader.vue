@@ -5,7 +5,11 @@ import Icon from './Icon.vue';
 
 <template>
   <div class="flex flex-col">
-    <Icon v-bind="$attrs" class="animate-spin mx-auto" :d="mdiMovieRoll" />
-    <span class="mx-auto">loading...</span>
+    <Icon
+      v-bind="$attributes"
+      class="animate-spin w-16 h-16 mx-auto"
+      :d="mdiMovieRoll"
+    />
+    <span>Loading...</span>
   </div>
 </template>

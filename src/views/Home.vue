@@ -9,10 +9,8 @@ const links = [
 </script>
 
 <template>
-  <main
-    class="h-full w-full p-7 flex flex-col gap-24 items-center justify-center"
-  >
-    <h1 class="text-5xl md:text-7xl lg:text-9xl">cinematique</h1>
+  <main class="p-7 flex flex-col gap-24 items-center justify-center flex-1">
+    <h1 class="text-5xl md:text-7xl lg:text-9xl select-none">cinematique</h1>
     <div class="flex flex-col lg:flex-row items-center justify-center gap-7">
       <HomeLink
         v-for="link in links"

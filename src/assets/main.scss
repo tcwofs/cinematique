@@ -28,13 +28,14 @@
 }
 
 html,
-body,
-#app {
+body {
   height: 100%;
   width: 100%;
 }
 
 #app {
+  min-height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -52,10 +53,21 @@ html,
 }
 
 ::-webkit-scrollbar-track {
+  border-radius: 2px;
   background-color: hsl(var(--b1));
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: hsl(var(--bc));
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }

@@ -12,7 +12,7 @@ const movie = defineProps({
 <template>
   <RouterLink
     :to="`/movie/${movie.id}`"
-    class="card shadow-xl image-full rounded-none group transition-all before:transition-all duration-1000 hover:before:!bg-opacity-80 lg:before:!bg-opacity-0 before:!bg-opacity-80"
+    class="card shadow-xl image-full rounded-none group transition-all before:transition-all duration-1000 hover:before:!bg-opacity-80 md:before:!bg-opacity-0 before:!bg-opacity-80"
   >
     <figure>
       <img
@@ -22,12 +22,12 @@ const movie = defineProps({
       />
     </figure>
     <div
-      class="card-body group-hover:opacity-100 lg:opacity-0 transition-opacity"
+      class="card-body group-hover:opacity-100 md:opacity-0 transition-opacity"
     >
       <h2 class="card-title" v-html="movie.name"></h2>
       <div
         v-if="movie.description"
-        class="relative h-full w-full lg:opacity-100 opacity-0 group-hover:opacity-100"
+        class="relative h-full w-full md:opacity-100 opacity-0 group-hover:opacity-100"
       >
         <div
           class="absolute inset-x-0 inset-y-2 overflow-auto"
