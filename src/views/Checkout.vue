@@ -63,10 +63,9 @@ const bookSession = async () => {
       daytime,
     });
 
-    // const state = {      movieName: state.movie.name, ...data     }
-
     data.data.movieName = state.movie.name;
-    console.log(data.data);
+    data.data.name = state.info.name;
+    data.data.email = state.info.email;
 
     console.log;
     router.push({
