@@ -17,7 +17,9 @@ http.interceptors.request.use(
 http.interceptors.response.use(
   (response) => response,
   (error) => {
-    const content = $t(`res.${error?.response?.data?.message || 'unknown'}`);
+    const content =
+      error?.response?.data?.error_message ||
+      'Unexpected error occurred. Try again later.';
     useToast().error(content);
 
     return Promise.reject(error);

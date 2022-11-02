@@ -36,7 +36,7 @@ watch(
 
 <template>
   <main
-    class="p-5 !pt-24 lg:p-16 h-full w-full flex flex-col max-w-2xl mx-auto flex-1"
+    class="p-5 !pt-20 lg:p-16 h-full w-full flex flex-col max-w-2xl mx-auto flex-1"
   >
     <div class="mx-auto mb-7 w-full flex items-center justify-center gap-5">
       <input
@@ -109,11 +109,3 @@ watch(
     </div>
   </main>
 </template>
-
-<style lang="postcss">
-.movie-grid {
-  @apply gap-10 min-h-full w-full;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: max-content;
-}
-</style>

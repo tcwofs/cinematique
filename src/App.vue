@@ -1,5 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router';
+
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 </script>
 
 <template>
@@ -12,12 +14,20 @@ import { RouterView } from 'vue-router';
         <nav>
           <ul class="menu-horizontal">
             <li>
-              <RouterLink to="/movies" class="hover:underline p-2">
+              <RouterLink
+                to="/movies"
+                class="hover:underline p-2"
+                @click="scrollToTop"
+              >
                 movies
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/sessions" class="hover:underline p-2">
+              <RouterLink
+                to="/sessions"
+                class="hover:underline p-2"
+                @click="scrollToTop"
+              >
                 sessions
               </RouterLink>
             </li>

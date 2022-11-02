@@ -71,3 +71,14 @@ html,
 .v-leave-to {
   opacity: 0;
 }
+
+.movie-grid {
+  @apply gap-10 min-h-full w-full;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: max-content;
+}
+
+.dots {
+  @apply flex flex-1 mt-3.5 mx-0.5 border-base-content border-dotted;
+  border-top-width: 3px;
+}
