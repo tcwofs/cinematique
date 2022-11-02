@@ -1,0 +1,1 @@
+import{o as e,c as s,e as t,k as o,u as c,q as r,_ as n,a as _}from"./index.8a00fc3d.js";const l={class:"flex flex-col"},m=_("span",{class:"mx-auto"},"no data",-1),p={__name:"NoData",setup(d){return(a,u)=>(e(),s("div",l,[t(n,o(a.$attrs,{class:"mx-auto",d:c(r)}),null,16,["d"]),m]))}};export{p as _};
